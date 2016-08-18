@@ -1,6 +1,12 @@
 ---
 
-- name: remove non-required files
+- name: remove known files that are placed there by cyverse
+  file: path={{ item }} state=absent
+  with_items: "{{ FILES_TO_BE_CLEANDED }}"
+  failed_when: False
+  tags: remove-files
+
+- name: remove non-required files from list of dirs
   shell: find {{ item }} -type f \( {{ FILE_TYPES_TO_BE_REMOVED | join() }} \) -delete
   with_items: "{{ DIRS_TO_BE_CLEANDED }}"
   failed_when: False

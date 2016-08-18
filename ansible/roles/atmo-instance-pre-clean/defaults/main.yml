@@ -1,8 +1,17 @@
 ---
 
+FILES_TO_BE_CLEANDED:
+  - /opt/cctools-3.7.2-x86_64-redhat5.tar.gz
+  - /opt/icommands31.x86_64.tar.bz2
+  - /opt/icommands.x86_64.tar.bz2
+  - /opt/VNC-Server-5.0.4-Linux-x64.deb
+  - /opt/VNC-Server-5.2.0-Linux-x64.deb
+  - /opt/iDrop
+  - /opt/cctools
+  - /opt/icommands
+
 DIRS_TO_BE_CLEANDED:
   - /root
-  - /opt
   - /shellinaboxd_install
 
 FILE_TYPES_TO_BE_REMOVED:
