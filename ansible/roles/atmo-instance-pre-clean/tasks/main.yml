@@ -2,6 +2,6 @@
 
 - name: remove known files that are placed there by cyverse
   file: path={{ item }} state=absent
-  with_items: "{{ FILES_TO_BE_CLEANDED }}"
+  with_items: "{{ FILES_TO_BE_CLEANED }}"
   failed_when: False
   tags: remove-files

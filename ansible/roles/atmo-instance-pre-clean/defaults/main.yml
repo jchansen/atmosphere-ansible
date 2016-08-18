@@ -1,6 +1,6 @@
 ---
 
-FILES_TO_BE_CLEANDED:
+FILES_TO_BE_CLEANED:
   - /opt/cctools-3.7.2-x86_64-redhat5.tar.gz
   - /opt/icommands31.x86_64.tar.bz2
   - /opt/icommands.x86_64.tar.bz2
